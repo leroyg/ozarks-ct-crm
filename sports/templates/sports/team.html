@@ -1,0 +1,92 @@
+{% extends 'sports/main.html' %}
+
+{% block content %}
+
+<h1>Team Page</h1>
+<br>
+<br>
+
+<div class="row">
+	<div class="col-md-4">
+		<div class="card card-body">
+			<a class="btn btn-primary  btn-sm btn-block" href="">Add Player</a>
+		</div>
+	</div>
+
+	<div class="col-md-4">
+		<div class="card card-body" text="center">
+      <!-- If radio checked yes, turn box green for testing / if radio checked no turn box yellow for limited testing -->
+			<h5>Competition Status</h5>
+			<div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          Yes event this week
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          No event this week
+        </label>
+      </div>
+		</div>
+	</div>
+
+  <div class="col-md-4">
+		<div class="card card-body">
+			<h5>Season Status</h5>
+			<div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+        <label class="form-check-label" for="flexRadioDefault1">
+          In-Season
+        </label>
+      </div>
+      <div class="form-check">
+        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+        <label class="form-check-label" for="flexRadioDefault2">
+          Off Season
+        </label>
+      </div>
+		</div>
+	</div>
+
+</div>
+<div class="row">
+	<div class="col-md-12">
+		<h5>Roster</h5>
+		<hr>
+		<div class="card card-body">
+			<table class="table table-sm">
+        <tr>
+					<th>Name (Last, First)</th>
+          <th>Date of Birth</th>
+					<th>Sport</th>
+				</tr>
+        <tr>
+          <td>WomensSoccerExample, Javalen</td>
+          <td>01/28/03</td>
+          <td>WSC</td>
+        </tr>
+        <tr>
+          <td>WomensWrestlingExample, Jaleca</td>
+          <td>01/28/03</td>
+          <td>WWR</td>
+        </tr>
+        <tr>
+          <td>MensWrestlingExample, Pablo</td>
+          <td>01/28/03</td>
+          <td>MSC</td>
+        </tr>
+        <tr>
+          <td>MensBaseballExample, Petark</td>
+          <td>01/28/03</td>
+          <td>MSC</td>
+        </tr>
+
+			</table>
+		</div>
+	</div>
+
+</div>
+
+{% endblock %}
