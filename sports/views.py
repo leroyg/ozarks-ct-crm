@@ -12,3 +12,6 @@ def trainer(request):
 
 def team(request):
     return render(request, 'sports/team.html')
+
+def player(request):
+    return render(request, 'sports/player.html')
